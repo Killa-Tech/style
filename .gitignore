@@ -1,0 +1,6 @@
+node_modules
+storybook-static
+.pnpm-store
+.DS_Store
+dist
+*.log

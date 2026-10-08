@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #0b1323;
+  --color-surface-dim: #0b1323;
+  --color-surface-bright: #31394b;
+  --color-surface-container-lowest: #060e1e;
+  --color-surface-container-low: #141b2c;
+  --color-surface-container: #181f30;
+  --color-surface-container-high: #222a3b;
+  --color-surface-container-highest: #2d3546;
+  --color-on-surface: #dbe2f9;
+  --color-on-surface-variant: #bacac7;
+  --color-inverse-surface: #dbe2f9;
+  --color-inverse-on-surface: #293042;
+  --color-outline: #849492;
+  --color-outline-variant: #3b4a48;
+  --color-surface-tint: #00ded2;
+
+  --color-primary-cyan: #4efff3;
+  --color-secondary-steel: #1a293e;
+  --color-tertiary-lunar: #a3b8cc;
+
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0b1323;
+  color: #dbe2f9;
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Clases de utilidad para Safe Futuristic Glassmorphism */
+.glass-surface-1 {
+  background: rgba(15, 25, 44, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(163, 184, 204, 0.12);
+}
+
+.glass-surface-2 {
+  background: rgba(26, 41, 62, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(78, 255, 243, 0.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.glass-surface-3 {
+  background: #1a293e;
+  border: 1px solid rgba(78, 255, 243, 0.4);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.6), 0 0 1px rgba(78, 255, 243, 0.4);
+}
+
+.cyan-luminescence {
+  box-shadow: 0 0 20px -2px rgba(78, 255, 243, 0.25);
+}
+
+.cyan-glow {
+  box-shadow: 0 0 24px rgba(78, 255, 243, 0.35);
+}
+
+/* Scrollbar personalizado en estética Cyber Lunar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b1323;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a293e;
+  border-radius: 4px;
+  border: 1px solid rgba(163, 184, 204, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2d3546;
+  border-color: #4efff3;
+}
